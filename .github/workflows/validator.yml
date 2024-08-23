@@ -49,7 +49,7 @@ jobs:
       - name: Check for log content
         id: check_logs
         run: |
-          if grep -q '[^[:space:]]' out/url_check.log; then
+          if grep -q '[^[:space:]]' out/broken_links.log; then
             echo "LOGS_EXIST=true" >> $GITHUB_ENV
           else
             echo "LOGS_EXIST=false" >> $GITHUB_ENV
