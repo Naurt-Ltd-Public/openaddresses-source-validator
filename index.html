@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Badges</title>
+</head>
+<body>
+    <h1>Broken Links Identifed: </h1>
+    <div id="badges"></div>
+
+    <script>
+        async function loadBadges() {
+            try {
+                const response = await fetch('badges/badges.json');
+                const badges = await response.json();
+
+                const badgeContainer = document.getElementById('badges');
+                const groups = {};
+                const seenBadges = new Set();  // To track and remove duplicates
+
+                // Fetch all badge files in parallel
+                const badgeFetchPromises = badges.map(file => fetch(`badges/${file}`).then(res => res.text()));
+
+                const badgeTexts = await Promise.all(badgeFetchPromises);
+
+                badgeTexts.forEach(mdText => {
+                    // Extract badge details from Markdown content
+                    const matches = mdText.match(/\[!\[.*?\]\((https:\/\/img.shields.io\/badge\/[^)]+)\)\]\((https:\/\/github.com\/[^)]+)\)/g);
+                    if (matches) {
+                        matches.forEach(match => {
+                            const imageUrlMatch = match.match(/\((https:\/\/img.shields.io\/badge\/[^)]+)\)/);
+                            const linkUrlMatch = match.match(/\]\((https:\/\/github.com\/[^)]+)\)/);
+                            const badgeTextMatch = match.match(/\[!\[(.*?)\]/); // Extract badge text (excluding "[![")
+
+                            if (imageUrlMatch && linkUrlMatch && badgeTextMatch) {
+                                const imageUrl = imageUrlMatch[1]; // Get the image URL
+                                const linkUrl = linkUrlMatch[1]; // Get the link URL
+                                const badgeText = badgeTextMatch[1]; // Get the badge text
+
+                                // Use a unique identifier for each badge to check for duplicates
+                                const badgeIdentifier = `${imageUrl}|${linkUrl}`;
+                                if (seenBadges.has(badgeIdentifier)) {
+                                    return; // Skip if the badge is a duplicate
+                                }
+                                seenBadges.add(badgeIdentifier);
+
+                                // Extract the prefix for grouping (e.g., "us/ia")
+                                const prefixMatch = badgeText.match(/^[^/]+\/[^/]+/);
+                                const prefix = prefixMatch ? prefixMatch[0] : 'Others';
+
+                                // Initialize group if it doesn't exist
+                                if (!groups[prefix]) {
+                                    groups[prefix] = [];
+                                }
+
+                                // Add the badge to the appropriate group
+                                groups[prefix].push({ imageUrl, linkUrl });
+                            }
+                        });
+                    } else {
+                        console.warn(`No badges found in file.`);
+                    }
+                });
+
+                // Display badges grouped by prefix
+                const fragment = document.createDocumentFragment(); // Use DocumentFragment for better performance
+
+                for (const prefix in groups) {
+                    const groupDiv = document.createElement('div');
+                    const heading = document.createElement('h2');
+                    heading.textContent = prefix;
+                    groupDiv.appendChild(heading);
+
+                    // Add all badges under this prefix
+                    groups[prefix].forEach(badge => {
+                        const link = document.createElement('a');
+                        link.href = badge.linkUrl;
+                        link.target = '_blank';
+                        const img = document.createElement('img');
+                        img.src = badge.imageUrl;
+                        link.appendChild(img);
+                        groupDiv.appendChild(link);
+                    });
+
+                    fragment.appendChild(groupDiv);
+                }
+
+                badgeContainer.appendChild(fragment); // Append everything at once
+            } catch (error) {
+                console.error('Error loading badges:', error);
+            }
+        }
+
+        window.onload = loadBadges;
+    </script>
+</body>
+</html>
