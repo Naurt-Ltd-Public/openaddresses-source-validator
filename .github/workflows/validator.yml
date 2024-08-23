@@ -46,24 +46,24 @@ jobs:
           ROOT_DIRECTORY: ${{ github.event.inputs.root_directory }}
         run: python src/main.py 
 
-      - name: Check if logs exist
+      - name: Check for log content
         id: check_logs
         run: |
-          if [ -s out/url_check.log ]; then
-            echo "logs_exist=true" >> $GITHUB_ENV
+          if grep -q '[^[:space:]]' out/url_check.log; then
+            echo "LOGS_EXIST=true" >> $GITHUB_ENV
           else
-            echo "logs_exist=false" >> $GITHUB_ENV
+            echo "LOGS_EXIST=false" >> $GITHUB_ENV
           fi
 
       - name: Upload logs as artifacts
-        if: env.logs_exist == 'true'
+        if: env.LOGS_EXIST == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: logs
           path: out/*
 
       - name: Handle badges and commit (if publishing and logs exist)
-        if: ${{ github.event.inputs.publish_results == 'true' && env.logs_exist == 'true' }}
+        if: ${{ github.event.inputs.publish_results == 'true' && env.LOGS_EXIST == 'true' }}
         run: |
           # Upload badges as artifacts
           echo "Uploading badges as artifacts..."
