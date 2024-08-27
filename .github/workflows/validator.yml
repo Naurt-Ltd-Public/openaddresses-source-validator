@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       root_directory:
-        description: 'Directory to process. Example: ./openaddresses/sources/us/va/'
+        description: 'Directory to process. Example: openaddresses/sources/us/va/'
         required: true
-        default: './test'  
+        default: 'test'  
       publish_results:
         description: 'Publish results and update gh-pages branch'
         required: true
@@ -43,7 +43,7 @@ jobs:
 
       - name: Run the Python script
         env:
-          ROOT_DIRECTORY: ${{ github.event.inputs.root_directory }}
+          ROOT_DIRECTORY: ./${{ github.event.inputs.root_directory }}
         run: python src/main.py 
 
       - name: Check for log content
