@@ -6,7 +6,13 @@ on:
       root_directory:
         description: 'Directory to process. Example: ./openaddresses/sources/us/va/'
         required: true
-        default: './test'  # Default directory
+        default: './test'  
+      publish_results:
+        description: 'Publish results and update gh-pages branch'
+        required: true
+        default: false
+        type: boolean
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
@@ -33,50 +39,58 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: |
-          pip install -r src/requirements.txt
+        run: pip install -r src/requirements.txt
 
       - name: Run the Python script
         env:
           ROOT_DIRECTORY: ${{ github.event.inputs.root_directory }}
-        run: |
-          python src/main.py 
+        run: python src/main.py 
 
-      - uses: actions/upload-artifact@v4
+      - name: Check for log content
+        id: check_logs
+        run: |
+          if grep -q '[^[:space:]]' out/broken_links.log; then
+            echo "LOGS_EXIST=true" >> $GITHUB_ENV
+          else
+            echo "LOGS_EXIST=false" >> $GITHUB_ENV
+          fi
+
+      - name: Upload logs as artifacts
+        if: env.LOGS_EXIST == 'true'
+        uses: actions/upload-artifact@v4
         with:
           name: logs
           path: out/*
-      
+        
       - name: Upload badges as artifacts
+        if: env.LOGS_EXIST == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: badges
-          path: ./badges/
+            name: badges
+            path: ./badges/
 
-      - name: Set up Git credentials
+      - name: Handle badges and commit (if publishing and logs exist)
+        if: ${{ github.event.inputs.publish_results == 'true' && env.LOGS_EXIST == 'true' }}
         run: |
+
+          # Set up Git credentials
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
 
-      - name: Generate badges.json
-        run: |
+          # Generate badges.json
           ls badges/*.md | xargs -I {} basename {} > badge_list.txt
           echo "[" > badges.json
           awk '{printf "\"%s\",\n", $0}' badge_list.txt >> badges.json
           sed -i '$ s/,$//' badges.json
           echo "]" >> badges.json
-        shell: bash
-        
-      - name: Move badges.json to gh-pages
-        run: |
+          
+          # Move badges.json to badges directory
           mv badges.json badges/badges.json
-        
-      - name: Commit and push badges to gh-pages branch
-        run: |
+
+          # Commit and push badges to gh-pages branch
           git checkout -B gh-pages
           git add badges
           git commit -m "Update badges"
           git push -f origin gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
