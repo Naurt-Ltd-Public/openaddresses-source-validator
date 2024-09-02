@@ -1,0 +1,1 @@
+[![us/mo/buchanan.json - Exception](https://img.shields.io/badge/us/mo/buchanan.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mo/buchanan.json)

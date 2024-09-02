@@ -1,0 +1,1 @@
+[![us/ia/cerro_gordo.json - Exception](https://img.shields.io/badge/us/ia/cerro_gordo.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ia/cerro_gordo.json)

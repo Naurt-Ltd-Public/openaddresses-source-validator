@@ -1,0 +1,1 @@
+[![us/sc/city_of_rock_hill.json - Exception](https://img.shields.io/badge/us/sc/city_of_rock_hill.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/sc/city_of_rock_hill.json)

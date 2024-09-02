@@ -1,0 +1,1 @@
+[![us/ne/holt.json - Exception](https://img.shields.io/badge/us/ne/holt.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ne/holt.json)

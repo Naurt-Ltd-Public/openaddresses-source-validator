@@ -1,0 +1,1 @@
+[![us/ne/webster.json - Exception](https://img.shields.io/badge/us/ne/webster.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ne/webster.json)

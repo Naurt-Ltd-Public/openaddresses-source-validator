@@ -1,0 +1,1 @@
+[![us/ny/suffolk.json - Exception](https://img.shields.io/badge/us/ny/suffolk.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ny/suffolk.json)

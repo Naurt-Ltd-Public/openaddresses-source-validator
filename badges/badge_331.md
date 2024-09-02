@@ -1,0 +1,1 @@
+[![us/in/jay.json - Exception](https://img.shields.io/badge/us/in/jay.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/in/jay.json)

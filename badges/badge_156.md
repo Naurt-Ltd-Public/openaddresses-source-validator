@@ -1,0 +1,1 @@
+[![us/nc/union.json - Exception](https://img.shields.io/badge/us/nc/union.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/nc/union.json)

@@ -1,0 +1,1 @@
+[![us/tn/city_of_brentwood.json - Exception](https://img.shields.io/badge/us/tn/city_of_brentwood.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/tn/city_of_brentwood.json)

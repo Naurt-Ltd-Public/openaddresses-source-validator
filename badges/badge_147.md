@@ -1,0 +1,1 @@
+[![us/mn/big_stone.json - Exception](https://img.shields.io/badge/us/mn/big_stone.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mn/big_stone.json)

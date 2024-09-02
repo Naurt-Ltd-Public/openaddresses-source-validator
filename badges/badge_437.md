@@ -1,0 +1,1 @@
+[![us/mi/muskegon.json - Exception](https://img.shields.io/badge/us/mi/muskegon.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mi/muskegon.json)

@@ -1,0 +1,1 @@
+[![us/al/pickens.json - Exception](https://img.shields.io/badge/us/al/pickens.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/al/pickens.json)

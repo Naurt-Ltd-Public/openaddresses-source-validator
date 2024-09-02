@@ -1,0 +1,1 @@
+[![us/mo/dallas.json - Exception](https://img.shields.io/badge/us/mo/dallas.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mo/dallas.json)

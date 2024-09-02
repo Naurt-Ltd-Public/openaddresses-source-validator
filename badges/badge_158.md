@@ -1,0 +1,1 @@
+[![us/id/clearwater.json - Exception](https://img.shields.io/badge/us/id/clearwater.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/id/clearwater.json)

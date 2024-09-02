@@ -1,0 +1,1 @@
+[![us/ne/burt.json - Exception](https://img.shields.io/badge/us/ne/burt.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ne/burt.json)

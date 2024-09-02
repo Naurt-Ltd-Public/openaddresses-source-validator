@@ -1,0 +1,1 @@
+[![us/in/city-of-hobart.json - Exception](https://img.shields.io/badge/us/in/city-of-hobart.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/in/city-of-hobart.json)

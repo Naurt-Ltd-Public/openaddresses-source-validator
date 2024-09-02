@@ -1,0 +1,1 @@
+[![us/wi/lincoln.json - Exception](https://img.shields.io/badge/us/wi/lincoln.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/wi/lincoln.json)

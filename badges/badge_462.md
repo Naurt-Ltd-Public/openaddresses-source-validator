@@ -1,0 +1,1 @@
+[![us/ky/henderson.json - Exception](https://img.shields.io/badge/us/ky/henderson.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ky/henderson.json)

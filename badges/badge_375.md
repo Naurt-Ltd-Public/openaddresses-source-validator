@@ -1,0 +1,1 @@
+[![us/mo/city_of_cape_girardeau.json - Exception](https://img.shields.io/badge/us/mo/city_of_cape_girardeau.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mo/city_of_cape_girardeau.json)

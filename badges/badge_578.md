@@ -1,0 +1,1 @@
+[![us/tx/ector.json - Exception](https://img.shields.io/badge/us/tx/ector.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/tx/ector.json)

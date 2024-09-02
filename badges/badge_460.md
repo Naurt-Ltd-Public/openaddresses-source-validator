@@ -1,0 +1,1 @@
+[![us/mi/grand_traverse.json - Exception](https://img.shields.io/badge/us/mi/grand_traverse.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mi/grand_traverse.json)

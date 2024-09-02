@@ -1,0 +1,1 @@
+[![us/ks/shawnee_county.json - Exception](https://img.shields.io/badge/us/ks/shawnee_county.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ks/shawnee_county.json)

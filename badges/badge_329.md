@@ -1,0 +1,1 @@
+[![us/in/laporte.json - Exception](https://img.shields.io/badge/us/in/laporte.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/in/laporte.json)

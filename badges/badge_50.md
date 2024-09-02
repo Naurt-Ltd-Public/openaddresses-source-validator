@@ -1,0 +1,1 @@
+[![us/va/city_of_norton.json - Exception](https://img.shields.io/badge/us/va/city_of_norton.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/va/city_of_norton.json)

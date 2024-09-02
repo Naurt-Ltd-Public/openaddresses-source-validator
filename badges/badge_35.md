@@ -1,0 +1,1 @@
+[![us/nm/lea.json - Exception](https://img.shields.io/badge/us/nm/lea.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/nm/lea.json)

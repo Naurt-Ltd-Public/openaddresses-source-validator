@@ -1,0 +1,1 @@
+[![us/in/lawrence.json - Exception](https://img.shields.io/badge/us/in/lawrence.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/in/lawrence.json)

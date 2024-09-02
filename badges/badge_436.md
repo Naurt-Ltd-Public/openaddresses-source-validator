@@ -1,0 +1,1 @@
+[![us/al/bibb.json - Exception](https://img.shields.io/badge/us/al/bibb.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/al/bibb.json)

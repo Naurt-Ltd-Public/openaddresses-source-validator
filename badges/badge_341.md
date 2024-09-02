@@ -1,0 +1,1 @@
+[![us/in/madison.json - Exception](https://img.shields.io/badge/us/in/madison.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/in/madison.json)

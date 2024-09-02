@@ -1,0 +1,1 @@
+[![us/ga/columbia.json - Exception](https://img.shields.io/badge/us/ga/columbia.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ga/columbia.json)

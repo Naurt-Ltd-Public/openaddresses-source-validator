@@ -1,0 +1,1 @@
+[![us/mi/st_clair.json - Exception](https://img.shields.io/badge/us/mi/st_clair.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mi/st_clair.json)

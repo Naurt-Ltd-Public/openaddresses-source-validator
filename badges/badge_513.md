@@ -1,0 +1,1 @@
+[![us/fl/pinellas.json - Exception](https://img.shields.io/badge/us/fl/pinellas.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/fl/pinellas.json)

@@ -1,0 +1,1 @@
+[![us/co/moffat.json - Exception](https://img.shields.io/badge/us/co/moffat.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/co/moffat.json)

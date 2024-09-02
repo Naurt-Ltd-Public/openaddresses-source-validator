@@ -1,0 +1,1 @@
+[![us/ca/contra_costa.json - Exception](https://img.shields.io/badge/us/ca/contra_costa.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ca/contra_costa.json)

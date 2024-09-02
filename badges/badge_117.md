@@ -1,0 +1,1 @@
+[![us/nc/city_of_fuquay_varina.json - Exception](https://img.shields.io/badge/us/nc/city_of_fuquay_varina.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/nc/city_of_fuquay_varina.json)

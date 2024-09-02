@@ -1,0 +1,1 @@
+[![us/or/city_of_tigard.json - Exception](https://img.shields.io/badge/us/or/city_of_tigard.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/or/city_of_tigard.json)

@@ -1,0 +1,1 @@
+[![us/nh/city_of_nashua.json - Exception](https://img.shields.io/badge/us/nh/city_of_nashua.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/nh/city_of_nashua.json)

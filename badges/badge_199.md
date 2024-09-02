@@ -1,0 +1,1 @@
+[![us/ne/morrill.json - Exception](https://img.shields.io/badge/us/ne/morrill.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ne/morrill.json)

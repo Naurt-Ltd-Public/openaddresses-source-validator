@@ -1,0 +1,1 @@
+[![us/ca/glenn.json - Exception](https://img.shields.io/badge/us/ca/glenn.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ca/glenn.json)

@@ -1,0 +1,1 @@
+[![us/nd/dickinson.json - Exception](https://img.shields.io/badge/us/nd/dickinson.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/nd/dickinson.json)

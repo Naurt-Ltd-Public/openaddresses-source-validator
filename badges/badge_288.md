@@ -1,0 +1,1 @@
+[![us/la/st_charles_parish.json - Exception](https://img.shields.io/badge/us/la/st_charles_parish.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/la/st_charles_parish.json)

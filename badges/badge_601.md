@@ -1,0 +1,1 @@
+[![us/ca/city_of_irvine.json - Exception](https://img.shields.io/badge/us/ca/city_of_irvine.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ca/city_of_irvine.json)

@@ -1,0 +1,1 @@
+[![us/ny/washington.json - Exception](https://img.shields.io/badge/us/ny/washington.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ny/washington.json)

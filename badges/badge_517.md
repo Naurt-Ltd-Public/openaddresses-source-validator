@@ -1,0 +1,1 @@
+[![us/sd/minnehaha.json - Exception](https://img.shields.io/badge/us/sd/minnehaha.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/sd/minnehaha.json)

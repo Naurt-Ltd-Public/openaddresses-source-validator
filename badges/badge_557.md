@@ -1,0 +1,1 @@
+[![us/ks/city_of_salina.json - Exception](https://img.shields.io/badge/us/ks/city_of_salina.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ks/city_of_salina.json)

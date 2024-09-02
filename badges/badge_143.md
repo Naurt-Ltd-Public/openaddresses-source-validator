@@ -1,0 +1,1 @@
+[![us/pa/delaware.json - Exception](https://img.shields.io/badge/us/pa/delaware.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/pa/delaware.json)

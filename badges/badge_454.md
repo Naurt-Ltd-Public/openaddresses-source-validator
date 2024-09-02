@@ -1,0 +1,1 @@
+[![us/tn/franklin.json - Exception](https://img.shields.io/badge/us/tn/franklin.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/tn/franklin.json)

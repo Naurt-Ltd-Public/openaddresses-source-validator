@@ -1,0 +1,1 @@
+[![us/mn/lake_of_the_woods.json - Exception](https://img.shields.io/badge/us/mn/lake_of_the_woods.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/mn/lake_of_the_woods.json)

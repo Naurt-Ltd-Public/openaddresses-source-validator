@@ -1,0 +1,1 @@
+[![us/al/jefferson.json - Exception](https://img.shields.io/badge/us/al/jefferson.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/al/jefferson.json)

@@ -1,0 +1,1 @@
+[![us/nc/guilford.json - Exception](https://img.shields.io/badge/us/nc/guilford.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/nc/guilford.json)

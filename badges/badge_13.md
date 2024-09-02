@@ -1,0 +1,1 @@
+[![us/nm/bernalillo.json - Exception](https://img.shields.io/badge/us/nm/bernalillo.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/nm/bernalillo.json)

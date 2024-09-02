@@ -1,0 +1,1 @@
+[![us/la/rapides.json - Exception](https://img.shields.io/badge/us/la/rapides.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/la/rapides.json)

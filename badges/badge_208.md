@@ -1,0 +1,1 @@
+[![us/ne/knox.json - Exception](https://img.shields.io/badge/us/ne/knox.json-Exception-red)](https://github.com/openaddresses/openaddresses/tree/master/sources/us/ne/knox.json)
